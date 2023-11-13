@@ -52,6 +52,7 @@ floating_minimum_size 960 x 540
 floating_maximum_size 960 x 540
 
 # launch in floating window
+for_window [class="Nemo"] floating enable
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
