@@ -54,6 +54,7 @@ floating_maximum_size 960 x 540
 # launch in floating window
 for_window [class="Nemo"] floating enable
 for_window [class="Gnome-system-monitor"] floating enable
+for_window [class="Gnome-screenshot"] floating enable
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -77,11 +78,10 @@ bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 # start apps on boot
 exec --no-startup-id thorium-browser
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec --no-startup-id i3-sensible-terminal
 exec_always --no-startup-id feh --bg-fill $HOME/Pictures/wallpaper.jpg
 exec_always --no-startup-id xinput --set-prop 'pointer:Razer Razer Viper Mini' 'libinput Accel Profile Enabled' 0, 1
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
-assign [class="Gnome-terminal"] $ws3
 assign [class="discord"] $ws2
 
 # change focus
@@ -139,10 +139,10 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1 Browser "
-set $ws2 "2 Messaging 󰙯"
-set $ws3 "3 Terminal "
-set $ws4 "4 Misc "
+set $ws1 "1  Browser"
+set $ws2 "2 󰙯 Messaging"
+set $ws3 "3  Terminal"
+set $ws4 "4  Misc"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -234,11 +234,14 @@ set $inactive-text-colour	#FFD1DC
 
 # Changing colour of the window
 #				border				background		text				indicator
-client.focused 			$active-text-colour		$active-text-colour	$active-text-colour		$background-colour
+client.focused 			$active-text-colour		$active-text-colour	$active-text-colour		$active-text-colour
 client.unfocused		$inactive-text-colour		$background-colour	$inactive-text-colour		$background-colour
 client.focused_inactive		$inactive-text-colour		$background-colour	$inactive-text-colour		$background-colour
 
 hide_edge_borders both
 
 gaps inner 10
-default_border pixel 2
+default_border none
+
+# screenshot
+bindsym $mod+Shift+s exec --no-startup-id gnome-screenshot
