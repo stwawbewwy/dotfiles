@@ -55,6 +55,8 @@ floating_maximum_size 960 x 540
 for_window [class="Nemo"] floating enable
 for_window [class="Gnome-system-monitor"] floating enable
 for_window [class="Gnome-screenshot"] floating enable
+for_window [class="Gnome-terminal"] floating enable
+for_window [class="Rhythmbox"] floating enable
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -234,7 +236,7 @@ set $inactive-text-colour	#FFD1DC
 
 # Changing colour of the window
 #				border				background		text				indicator
-client.focused 			$active-text-colour		$active-text-colour	$active-text-colour		$active-text-colour
+client.focused 			$active-text-colour		$background-colour	$active-text-colour		$active-text-colour
 client.unfocused		$inactive-text-colour		$background-colour	$inactive-text-colour		$background-colour
 client.focused_inactive		$inactive-text-colour		$background-colour	$inactive-text-colour		$background-colour
 
@@ -242,6 +244,3 @@ hide_edge_borders both
 
 gaps inner 10
 default_border none
-
-# screenshot
-bindsym $mod+Shift+s exec --no-startup-id gnome-screenshot
