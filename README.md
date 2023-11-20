@@ -1,19 +1,19 @@
-<HEAD>Information</HEAD>
+<HEAD><b>Information</b></HEAD>
 <br>
 <br>
 <BODY>
-OS: Arch <br>
-WM: i3wm <br>
-Terminal: kitty <br>
-Shell: bash <br>
-Editor: Vim <br>
-Compositor: picom <br>
-Application Launcher: dmenu <br>
-Music Player: cmus <br>
+<b>OS</b>: Arch <br>
+<b>WM</b>: i3wm <br>
+<b>Terminal</b>: kitty <br>
+<b>Shell</b>: bash <br>
+<b>Editor</b>: Vim <br>
+<b>Compositor</b>: picom <br>
+<b>Application Launcher</b>: dmenu <br>
+<b>Music Player</b>: cmus <br>
 </BODY>
 <br>
-<HEAD>Additional Information</HEAD>
+<HEAD><b>Additional Information</b></HEAD>
 <br>
 <br>
 <BODY>
-Font used: Jet Brains Mono Nerd Font <br>
+<b>Font used</b>: Jet Brains Mono Nerd Font <br>
