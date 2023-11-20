@@ -2,7 +2,7 @@
 <br>
 <br>
 <BODY>
-<b>OS</b>: Arch <br>
+**OS**: Arch <br>
 <b>WM</b>: i3wm <br>
 <b>Terminal</b>: kitty <br>
 <b>Shell</b>: bash <br>
