@@ -1,4 +1,4 @@
-<HEAD><b>Information</b></HEAD>
+<HEAD>**Information**</HEAD>
 <br>
 <br>
 <BODY>
