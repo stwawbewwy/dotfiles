@@ -1,4 +1,4 @@
-<HEAD><u><b>Information</b></u></HEAD>
+<HEAD><ins><b>Information</b></ins></HEAD>
 <br>
 <br>
 <BODY>
@@ -12,7 +12,7 @@
 <b>Music Player</b>: cmus <br>
 </BODY>
 <br>
-<HEAD><u><b>Additional Information</b></u></HEAD>
+<HEAD><ins><b>Additional Information</b></ins></HEAD>
 <br>
 <br>
 <BODY>
